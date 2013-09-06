@@ -19,6 +19,13 @@
 -->
 <resources>
 
+    <style name="EmailTheme" parent="@*android:style/Theme.Holo">
+        <item name="android:windowBackground">@drawable/background_holo_dark</item>
+    </style>
+
+    <style name="EmailThemeDialogWhenLarge" parent="@*android:style/Theme.Holo.DialogWhenLarge">
+    </style>
+
     <style name="RecipientEditTextViewStyle" parent="@style/RecipientEditTextView">
         <item name="android:minHeight">42dip</item>
         <item name="android:gravity">bottom</item>
@@ -52,7 +59,7 @@
         <item name="android:paddingLeft">0dip</item>
      </style>
 
-    <style name="ComposeFieldLayout" parent="android:Widget.Holo.Light.EditText">
+    <style name="ComposeFieldLayout" parent="android:Widget.Holo.EditText">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:addStatesFromChildren">true</item>
@@ -107,13 +114,13 @@
         <item name="android:maxLines">1</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">#ffffffff</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:ellipsize">end</item>
     </style>
 
     <style name="attachment_size" parent="@style/attachment_name">
-        <item name="android:textColor">#555555</item>
+        <item name="android:textColor">#ffdddddd</item>
     </style>
 
     <style name="attachment_thumbnail">
@@ -131,12 +138,12 @@
         <item name="android:singleLine">true</item>
         <item name="android:includeFontPadding">false</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">#bcbcbc</item>
+        <item name="android:textColor">#ffbcbcbc</item>
     </style>
 
     <style name="unreadCountActionBar" parent="unreadCount">
         <item name="android:layout_marginRight">8dp</item>
-        <item name="android:textColor">#bbbbbb</item>
+        <item name="android:textColor">#ffc7c7c7</item>
         <!-- Use dp rather than sp for size since starts large and must not get too large -->
         <item name="android:textSize">36dp</item>
     </style>
@@ -162,7 +169,7 @@
     </style>
 
     <style name="NotificationPrimaryText">
-        <item name="android:textColor">#cccccc</item>
+        <item name="android:textColor">#ffcccccc</item>
     </style>
 
     <style name="NotificationSecondaryText">
